@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react'; // Importe o useEffect do React
+
 import { motion, useAnimation } from 'framer-motion';
 import { IoChatbubblesOutline } from 'react-icons/io5';
 import { IoPeopleOutline } from 'react-icons/io5';
-
 
 function Services() {
   const controls = useAnimation();
@@ -21,7 +21,7 @@ function Services() {
     await controls.start('visible');
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     startAnimation();
   }, []);
 

@@ -39,14 +39,14 @@ const Navbar = () => {
 
 
   const navItems = [
-    { id: 1, text: 'Home', target: 'Home' },
+    { id: 1, text: 'Início', target: 'Home' },
     { id: 2, text: 'Contato', target: 'Contato' },
     { id: 3, text: 'Demandas', target: 'Demandas' },
   ];
 
   return (
     <section id="Home">
-      <div className='bg-[#ad6a51] flex justify-between items-center h-20 px-4 font-semibold text-[#EFD770] relative shadow-xl'>
+      <div className='bg-[#ad6a51] flex justify-between items-center h-20 px-4 font-semibold text-[#EFD770] relative shadow-xl w-full'>
        
         <div className="flex items-center mt-8">
           <img src={logmann} alt="Logo-header" className="w-52 h-52 object-contain" />

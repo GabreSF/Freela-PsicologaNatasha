@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'; // Importe o useEffect do React
-
+import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { IoChatbubblesOutline } from 'react-icons/io5';
 import { IoPeopleOutline } from 'react-icons/io5';
@@ -26,26 +25,26 @@ function Services() {
   }, []);
 
   return (
-    <section className="services section mt-14 mb-8">
-      <div className="container mx-auto">
+    <section className="services section mt-14 mb-8 max-w-screen-xl mx-auto">
+      <div className="container">
         <motion.div
-          className="flex flex-col md:flex-row items-center justify-center gap-12" 
+          className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center"
           variants={containerVariants}
           initial="hidden"
           animate={controls}
         >
-          <motion.div variants={itemVariants} className="flex flex-col items-center space-x-4"> 
-            <IoChatbubblesOutline size="52px" className='text-[#ad6a51]' />
-            <div className="text-xl font-semibold xl:mb-2 text-[#ad6a51] font-mukta-mahee">
+          <motion.div variants={itemVariants} className="flex flex-col items-center space-x-4">
+            <IoChatbubblesOutline size="52px" className="text-[#ad6a51]" />
+            <div className="text-xl font-semibold xl:mb-2 text-[#ad6a51] font-mukta-mahee text-center md:text-left">
               Psicoterapia Online
             </div>
-            <p className="text-center md:text-left  text-[#ad6a51] font-mukta-mahee">
-              No conforto e na praticidade de onde você estiver!
+            <p className="text-center md:text-left text-[#ad6a51] font-mukta-mahee">
+              No conforto e praticidade de onde você estiver!
             </p>
           </motion.div>
-          <motion.div variants={itemVariants} className="flex flex-col items-center space-x-4"> 
-            <IoPeopleOutline size="52px" className='text-[#ad6a51]' />
-            <div className="text-xl font-semibold text-[#ad6a51] xl:mb-2 font-mukta-mahee">
+          <motion.div variants={itemVariants} className="flex flex-col items-center space-x-4">
+            <IoPeopleOutline size="52px" className="text-[#ad6a51]" />
+            <div className="text-xl font-semibold text-[#ad6a51] xl:mb-2 font-mukta-mahee text-center md:text-left">
               Psicoterapia Presencial
             </div>
             <p className="text-center md:text-left text-[#ad6a51] font-mukta-mahee">

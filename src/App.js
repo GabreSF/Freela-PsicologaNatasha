@@ -20,7 +20,7 @@ const App = () => {
         <h1 className="text-3xl font-bold text-[#ad6a51] font-mukta-mahee"><br /> Olá!</h1>
         <p className="items-center justify-center mx-4 text-[#ad6a51] font-mukta-mahee text-lg lg:text-xl" style={{ lineHeight: '32px' }}><br />Seja bem-vindo(a) a este espaço!<br /><br />
         Vamos falar um pouco sobre a psicoterapia?<br /> A partir da relação terapêutica, neutra e livre de julgamentos, você pode ter um espaço seguro, acolhedor e sigiloso para falar abertamente sobre suas angústias e explorar sua história de vida.<br /><br />
-        Acredito que, com a psicoterapia, você pode trilhar um caminho que te ajuda a entender e lidar com suas dores emocionais, com o objetivo de te auxiliar a alcançar uma vida mais leve, saudável e produtiva. Que você possa, cada vez mais, se encontrar consigo e com suas potências!<br /> <br /></p>
+        Acredito que, com a psicoterapia, você pode trilhar um caminho que lhe ajudará a entender e lidar com suas dores emocionais, com o objetivo de te auxiliar a alcançar uma vida mais leve, saudável e produtiva. Que você possa, cada vez mais se encontrar consigo e com suas potências!<br /> <br /></p>
       </SectionWithOne>
       <About />
       <FrasesCarousel />

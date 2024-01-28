@@ -19,9 +19,9 @@ const Hero = () => {
   };
 
   return (
-    <div className="px-3 py-5 bg-[#ede1ad] lg:py-10">
+    <div className="px-3 py-5 bg-[#ede1ad] lg:py-10 overflow-hidden"> 
       <motion.div
-        className="grid lg:grid-cols-2 items-center justify-items-center gap-2"
+        className="grid lg:grid-cols-2 items-center justify-items-center gap-2 lg:w-full w-full" 
         variants={containerVariants}
         initial="hidden"
         animate="visible"

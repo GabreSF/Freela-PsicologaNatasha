@@ -7,12 +7,13 @@ const Card = ({ id, title, image }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="w-full md:w-64 mx-auto mb-8 px-2"> 
+    <div className="w-full md:w-64 mx-auto mb-8 px-2 max-w-md"> 
       <div className="bg-white p-4 rounded-md shadow-md">
         <img
           src={image}
           alt={`Imagem do Card ${id}`}
           className="w-full h-48 object-cover rounded-md mb-4"
+          style={{ maxWidth: '100%' }}
         />
         <h3 className="text-xl font-mukta-mahee text-[#ad6a51] font-bold mb-2 text-center">
           {title.split('  ').map((word, index) => (
@@ -47,9 +48,9 @@ const Artigo = () => {
   ];
 
   return (
-    <section id="Demandas">
+    <section id="Demandas" className="px-3 py-2">
       <h1 className="text-3xl font-bold text-center mb-8 font-mukta-mahee text-[#ad6a51] mt-16">Algumas Demandas</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-2 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-2 mt-8">
         {cards.map((card) => (
           <Card key={card.id} {...card} />
         ))}

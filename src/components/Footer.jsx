@@ -6,10 +6,10 @@ import logmann2 from '../assets/logmann2.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#ad6a51] text-[#EFD770] p-8">
-      <div className="max-w-screen-lg mx-auto">
+    <footer className="bg-[#ad6a51] text-[#EFD770] p-8 w-full">
+      <div className="mx-auto">
         <div className="flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0 md:space-x-8">
-          <div className="mb-4 md:mb-0">
+          <div className="mb-4 md:mb-0 overflow-hidden">
             <img
               src={logmann2}
               alt="Logo do Footer"

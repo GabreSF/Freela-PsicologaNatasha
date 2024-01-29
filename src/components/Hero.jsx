@@ -36,11 +36,12 @@ const Hero = () => {
           </p>
         </motion.div>
 
-        <motion.div variants={imageVariants} className="mt-16">
+        <motion.div variants={imageVariants} className="mt-16 w-64 h-64">
           <img
             src={HeroNat}
             alt="Imagem de fundo"
-            className="w-64 h-64 object-cover rounded-[80px]"
+            className="object-cover rounded-[80px]"
+            width="100%"
           />
         </motion.div>
       </motion.div>

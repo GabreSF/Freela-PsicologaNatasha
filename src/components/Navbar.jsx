@@ -84,7 +84,7 @@ const Navbar = () => {
         </div>
 
        
-        <ul className='hidden md:flex'>
+        <ul className='hidden md:flex w-full justify-end'> {/* Alteração na classe aqui */}
           {navItems.map(item => (
             <li
               key={item.id}

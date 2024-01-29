@@ -29,7 +29,7 @@ const About = () => {
         <motion.div
           initial="left"
           animate="right"
-          className="mb-8 lg:mb-0 mx-auto" 
+          className="mb-8 lg:mb-0 mx-auto h-auto" 
           variants={{
             left: {
               transform: "translateX(-100%)",
@@ -42,14 +42,14 @@ const About = () => {
           <img
             src={fotonat2}
             alt="Imagem de perfil"
-            className="w-full max-w-[300px] h-auto object-cover rounded-[42px] bg-white shadow-xl"
+            className="object-cover rounded-[42px] bg-white shadow-xl"
           />
         </motion.div>
 
         <motion.div
           initial="right"
           animate="left"
-          className="text-center lg:text-left"
+          className="w-full text-center lg:text-left"
           variants={{
             right: {
               transform: "translateX(100%)",

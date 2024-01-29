@@ -25,10 +25,10 @@ function Services() {
   }, []);
 
   return (
-    <section className="services section mt-14 mb-8 max-w-screen-xl mx-auto">
-      <div className="container">
+    <section className="services section mt-14 mb-8 mx-auto">
+      <div className="container w-full">
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center"
+          className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-center w-full"
           variants={containerVariants}
           initial="hidden"
           animate={controls}

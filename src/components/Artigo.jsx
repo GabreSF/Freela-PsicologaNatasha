@@ -7,7 +7,7 @@ const Card = ({ id, title, image }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="w-full md:w-64 mx-auto mb-8 px-2 max-w-md"> 
+    <div className="w-full md:w-full mx-auto mb-8 px-2"> 
       <div className="bg-white p-4 rounded-md shadow-md">
         <img
           src={image}
@@ -16,7 +16,7 @@ const Card = ({ id, title, image }) => {
           style={{ maxWidth: '100%' }}
         />
         <h3 className="text-xl font-mukta-mahee text-[#ad6a51] font-bold mb-2 text-center">
-          {title.split('  ').map((word, index) => (
+          {title.split('  ').map((word, index) => (
             <React.Fragment key={index}>
               {word}
               {index !== title.split(' ').length - 1 && <br />}
@@ -32,17 +32,17 @@ const Artigo = () => {
   const cards = [
     {
       id: 1,
-      title: 'Ansiedade  Autoestima  Medo',
+      title: 'Ansiedade  Autoestima  Medo',
       image: DemandOne,
     },
     {
       id: 2,
-      title: 'Humor deprimido  Conflitos interpessoais  Culpa',
+      title: 'Humor deprimido  Conflitos interpessoais  Culpa',
       image: DemandTwo,
     },
     {
       id: 3,
-      title: 'Procrastinação  Concentração/Foco  Autoconhecimento',
+      title: 'Procrastinação  Concentração/Foco  Autoconhecimento',
       image: DemandTree,
     },
   ];
